@@ -227,8 +227,3 @@ elif pred2>pred1:
 else:
     print('1號選手贏了')
     # play_mp3('.\AI\p1_win.mp3')
-
-
-
-
-
