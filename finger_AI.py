@@ -92,16 +92,16 @@ y_train_cat = to_categorical(y_train)
 # 256 個神經元是一個合理的起始值，你可以根據模型的性能進行調整。如果模型在訓練和驗證數據上表現良好，則可以保留這個值。如果出現過度擬合或性能不佳的情況，可以嘗試減少或增加 units 的數量，
 # 並通過實驗找到最適合的設置
 #endregion
-# mlp = Sequential()
-# mlp.add(Dense(input_dim =x_train.shape[1]*x_train.shape[2], units = 512,name = 'layer_1', activation = 'relu'))
+mlp = Sequential()
+mlp.add(Dense(input_dim =x_train.shape[1]*x_train.shape[2], units = 64,name = 'layer_1', activation = 'relu'))
 # mlp.add(Dense( units = 256,name = 'layer_2', activation = 'relu'))
 # mlp.add(Dense( units = 128,name = 'layer_3', activation = 'relu'))
 # mlp.add(Dense( units = 64,name = 'layer_4', activation = 'relu'))
-# mlp.add(Dense( units = 3,name = 'layer_5', activation = 'softmax')) #三個類別:剪刀 石頭 布
-# mlp.summary()
+mlp.add(Dense( units = 3,name = 'layer_5', activation = 'softmax')) #三個類別:剪刀 石頭 布
+mlp.summary()
 
 # 模型訓練 設定優化器(optimizer)、損失函數(loss)、效能衡量指標(metrics)的類別
-# mlp.compile(loss = 'categorical_crossentropy',optimizer='adam',metrics = ['accuracy']) 
+mlp.compile(loss = 'categorical_crossentropy',optimizer='adam',metrics = ['accuracy']) 
 # loss= 信息墒,一個衡量標準答案跟模型訓練過程腦袋的答案差距  optimizer: 用彈珠動能滾動自動找到權重最低的組合方法
 
 # mlp 訓練
@@ -115,12 +115,12 @@ y_train_cat = to_categorical(y_train)
 # verbose=0：不輸出訓練過程。
 # verbose=1：每個時期（epoch）輸出一行訓練過程的信息。
 # verbose=2：每個時期輸出一行信息，並顯示進度條
-# data_history = mlp.fit(x_train_shape,
-#                         y_train_cat,
-#                         batch_size=100, # 隨機抽樣batch_size筆影像去訓練
-#                         epochs = 80,
-#                         validation_split=0.1,
-#                         verbose=2)
+data_history = mlp.fit(x_train_shape,
+                        y_train_cat,
+                        batch_size=100, # 隨機抽樣batch_size筆影像去訓練
+                        epochs = 80,
+                        validation_split=0.1,
+                        verbose=2)
 
 # plt.plot(data_history.history['loss'],'ro--')
 # plt.show()
@@ -130,12 +130,12 @@ y_train_cat = to_categorical(y_train)
 # 獲取當前工作目錄的絕對路徑
 current_dir = os.path.abspath(os.path.dirname(__file__))
 model_path = os.path.join(current_dir, r'\AI_module\mlp.h5')
-# str_dir = model_path[0:model_path.rfind('\\')]
-# if not os.path.exists(str_dir):
-#     os.makedirs(str_dir)
+str_dir = model_path[0:model_path.rfind('\\')]
+if not os.path.exists(str_dir):
+    os.makedirs(str_dir)
 
 # 儲存模型:
-# mlp.save(model_path)
+mlp.save(model_path)
 
 time.sleep(3)
 
