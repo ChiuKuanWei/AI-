@@ -1,4 +1,4 @@
-# 搭建模型
+# 搭建模型//
 from tensorflow.keras.models import Sequential # 模型的蛋糕支柱
 from tensorflow.keras.layers import Dense # 描述蛋糕 神經元的細部參數
 from tensorflow.keras.models import load_model
