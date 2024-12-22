@@ -12,7 +12,6 @@
 
 3.顯示識別結果
 
-![image](https://github.com/user-attachments/assets/1122349f-4584-47df-8da2-dd571c809bdd)
-![image](https://github.com/user-attachments/assets/132c57fe-40cc-4e7d-af59-fb35b165ba08)
+![image](https://github.com/user-attachments/assets/1122349f-4584-47df-8da2-dd571c809bdd)![image](https://github.com/user-attachments/assets/132c57fe-40cc-4e7d-af59-fb35b165ba08)
 
 
