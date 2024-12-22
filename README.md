@@ -2,7 +2,8 @@
 
 1.準備好影像範本
 
-![image](https://github.com/user-attachments/assets/aa509b23-f4e0-43c6-a4f8-a642ac4695b7)
+![image](https://github.com/user-attachments/assets/aa509b23-f4e0-43c6-a4f8-a642ac4695b7)![image](https://github.com/user-attachments/assets/b30e8e22-103e-4f83-90ed-b8ba48e7c950)
+
 
 2.範本訓練
 
