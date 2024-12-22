@@ -6,10 +6,12 @@
 
 2.範本訓練
 
-Loss
+Loss[%]
+
 ![image](https://github.com/user-attachments/assets/c51f0125-a6e3-4856-af38-0bdaa304f386)
 
-Accuracy
+Accuracy[%]
+
 ![image](https://github.com/user-attachments/assets/8d538949-e26e-484c-8529-9399f1b9fb41)
 
 3.顯示識別結果
