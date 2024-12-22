@@ -5,8 +5,10 @@
 ![image](https://github.com/user-attachments/assets/aa509b23-f4e0-43c6-a4f8-a642ac4695b7)![image](https://github.com/user-attachments/assets/b30e8e22-103e-4f83-90ed-b8ba48e7c950)![image](https://github.com/user-attachments/assets/4287d328-589c-46a8-ada4-3b800fed0cb7)
 
 2.範本訓練
+
 Loss
 ![image](https://github.com/user-attachments/assets/c51f0125-a6e3-4856-af38-0bdaa304f386)
+
 Accuracy
 ![image](https://github.com/user-attachments/assets/8d538949-e26e-484c-8529-9399f1b9fb41)
 
